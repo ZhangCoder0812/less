@@ -1,0 +1,57 @@
+ /*
+
+嵌套：
+      具有层级关系的css样式
+      用在后代关系和父子关系的选择器中
+      减少代码量 结构更加清晰
+
+  使用 & 表示父亲元素 (父子 邻居 兄弟 伪类)
+
+ */
+*{
+  padding: 0;
+  margin: 0;
+}
+ @bgcolor:#d43b33;
+ @h74:74px;
+ @w1000:1000px;
+
+header{
+    width: @w1000;
+    height:@h74;
+    background-color: @bgcolor;
+    display: flex;
+    margin: 0 auto;
+
+    #logo{
+      width: 118px;
+      height: @h74;
+      background: url("../images/youji2.jpeg");
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: @w1000 - 118px;
+      color:#fff;
+
+      li{
+        font-size: 20px;
+        line-height: @h74;
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{  /* 方式二 */
+            color: #ff0;
+            text-decoration: underline;
+          }
+
+        }
+       /* a:hover{  方式一
+          color: #ff0;
+          text-decoration: underline;
+        }*/
+      }
+    }
+}

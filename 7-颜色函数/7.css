@@ -1,0 +1,44 @@
+/*
+
+色彩三要素：
+    色相(颜色名称)，饱和度(鲜艳程度)，亮度(明暗程度)
+
+颜色函数：
+
+     亮度
+     lighten(@color,10%) 比@color亮10% ，@color是变量自己定义
+     darken(@color,10%)  比@color暗10%  (50%之后都是黑色的)
+
+     饱和度
+     saturate(@color,10%)  比@color浓10%
+     desaturate(@color,10%) 比@color浅10%
+
+      色相
+     spin(@color,10)  色相值增加10
+     spin(@color,-10) 色相值减少10
+
+     两种颜色混合
+     mix(@color1,@color2)
+
+*/
+ul {
+  list-style: none;
+}
+ul li:nth-of-type(1) {
+  background-color: #ff0000;
+}
+ul li:nth-of-type(2) {
+  background-color: #cc0000;
+}
+ul li:nth-of-type(3) {
+  background-color: #990000;
+}
+ul li:nth-of-type(4) {
+  background-color: #660000;
+}
+ul li:nth-of-type(5) {
+  background-color: #330000;
+}
+ul li:nth-of-type(6) {
+  background-color: #800080;
+}

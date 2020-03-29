@@ -1,0 +1,30 @@
+/*
+
+  运算符： 可以对角度，颜色，宽度，高度等进行计算
+
+  种类： +  -  *  /
+
+  若符号两边都是变量 可以不用空格隔开
+  若有一个是具体的值(要带单位) 符号两边要用空格隔开
+
+ */
+li {
+  margin-bottom: 10px;
+}
+li:nth-of-type(1) {
+  width: 200px;
+  background: #666;
+}
+li:nth-of-type(2) {
+  width: 300px;
+  background: #333;
+}
+li:nth-of-type(3) {
+  width: 500px;
+  background: #999999;
+}
+li:nth-of-type(4) {
+  width: 250px;
+  background: #cccccc;
+  /*  颜色范围是 #000000 ~ #ffffff 超出则不显示颜色 */
+}

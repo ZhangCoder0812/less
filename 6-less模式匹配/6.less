@@ -1,0 +1,33 @@
+/*
+
+类似于函数中的多态，同一个函数 显示不同结果
+
+混合名一样 根据分支的值决定执行哪个分支，
+有一个公共的分支都会执行
+类似于 switch...case..
+
+结构：
+  .fun(@_,@color){
+        公共分支
+     }
+  .fun(s1,@color){
+        分支1
+     }
+  .fun(s2,@color){
+        分支2
+     }
+
+使用：
+    h1{
+      .fun(s2,@color) // 分支2的样式 + 公共分支样式
+    }
+
+*/
+.triangle {
+  width: 0;
+  height: 0;
+  display: block;
+  border: 50px solid blue;
+  border-color: transparent ;
+  border-bottom-color: blue;
+}

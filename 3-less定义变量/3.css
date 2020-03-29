@@ -1,0 +1,10 @@
+/*
+
+ 把重复使用的css属性值定义为变量 可以重复使用 方便后期修改维护
+ 定义变量 使用 @符号， @变量名：变量值(必须是css的属性值)
+
+*/
+body {
+  background-color: red;
+  background: url("./images/lbj.jpg");
+}
